@@ -2,13 +2,13 @@
 
 <br>
 
-#### Declaring Variable Names
+### Declaring Variable Names
 
 In ruby, when declaring variable names always use *snake_case*, not *camelCase*. Each time you need to name something that requires multiple words, separate those words using underscores `_`, and make the whole title lowercase. Names should never start or contain uppercase letters.
 
 <br>
 
-#### Comments
+### Comments
 
 In ruby a single line comment looks like this:
 
@@ -28,17 +28,17 @@ This is line number three
 
 <br>
 
-#### Symbols
+### Symbols
 
 Symbols are primarily used as hash keys, or to reference method names. Once a symbol is created, it can not be changed, and only one copy of a symbol can exist at any given time. There can not be multiple symbols with the same value. Symbols look like this: `:symbol`. They have a colon, and then are followed by a name.
 
 <br>
 
-#### Prints, Puts, Return, & Yield
+### Prints, Puts, Return, & Yield
 
 <br>
 
-**Prints:**
+#### Prints:
 
 The print command takes whatever instructions you give it, and puts it on the screen, on the same line.
 
@@ -54,7 +54,7 @@ Output:
 ```
 <br>
 
-**Puts:**
+#### Puts:
 
 The puts command creates a new line for each thing that you have it print.
 
@@ -71,7 +71,7 @@ Output:
 ```
 <br>
 
-**Return:**
+#### Return:
 
 The return command just returns the value of something. If you don’t tell ruby what to return, it will always return the last expression in the method code block.
 
@@ -88,9 +88,9 @@ puts output
 
 In the example above, we defined a method called `double`. Inside the method, we `return n * 2`. We then set a variable `output` which is equal to `double(6)`. with the argument of `6`. We then add two to `output`, and we puts the variable `output`. If you don’t tell ruby what to return, it will always return the result of the last expression in the method code block.
 
-<br>
+br>
 
-**Yield:**
+#### Yield:
 
 The yield command allows for methods (that don’t have the capability already) to accept a block of code. Methods that accept blocks have a way of transferring control from the method to the block and back to the method again. You can build this into methods by using the yield command.
 

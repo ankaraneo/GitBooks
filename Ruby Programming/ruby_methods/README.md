@@ -60,8 +60,11 @@ square(10)
 
 In the example above, we gave the method square a parameter of n, and when we called the method, we gave it an argument of 10.
 
+<br>
 
-Splat Arguments:     On regular methods, you never really know exactly what argument you’re going to get, so you use the parameter as a temporary placeholder. However, what if you don’t know how many arguments you’re going to get? Then you use the splat argument: ( * ). You place your splat argument then follow it with the parameter you give it. It signals to ruby: “Hey Ruby, I don’t know how many arguments there are about to be, but it could be more than one."
+**Splat Arguments:**
+
+On regular methods, you never really know exactly what argument you’re going to get, so you use the parameter as a temporary placeholder. However, what if you don’t know how many arguments you’re going to get? Then you use the splat argument: ( * ). You place your splat argument then follow it with the parameter you give it. It signals to ruby: “Hey Ruby, I don’t know how many arguments there are about to be, but it could be more than one."
 
 For example:
 
