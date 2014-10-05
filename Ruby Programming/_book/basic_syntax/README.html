@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Basic Syntax | </title>
+        <title>Basic Syntax | Ruby Programming</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="1" data-basepath=".." data-revision="1412489211184">
+    <div class="book"  data-level="1" data-basepath=".." data-revision="1412526961149">
     
 
 <div class="book-summary">
@@ -57,7 +57,7 @@
                     <a href="../index.html">
                         <i class="fa fa-check"></i>
                         
-                         Basic Syntax
+                         Introduction
                     </a>
                 
             
@@ -349,7 +349,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" ></a>
+        <a href="../" >Ruby Programming</a>
     </h1>
 </div>
 
@@ -357,14 +357,14 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_7890">
+                    <section class="normal" id="section-gitbook_1197">
                     
                         <h1 id="basic-syntax">Basic Syntax</h1>
 <p><br></p>
-<h4 id="declaring-variable-names">Declaring Variable Names</h4>
+<h3 id="declaring-variable-names">Declaring Variable Names</h3>
 <p>In ruby, when declaring variable names always use <em>snake_case</em>, not <em>camelCase</em>. Each time you need to name something that requires multiple words, separate those words using underscores <code>_</code>, and make the whole title lowercase. Names should never start or contain uppercase letters.</p>
 <p><br></p>
-<h4 id="comments">Comments</h4>
+<h3 id="comments">Comments</h3>
 <p>In ruby a single line comment looks like this:</p>
 <pre><code class="lang-ruby"><span class="hljs-comment"># this is a single line comment</span>
 </code></pre>
@@ -376,12 +376,12 @@ This is line number three
 =end</span>
 </code></pre>
 <p><br></p>
-<h4 id="symbols">Symbols</h4>
+<h3 id="symbols">Symbols</h3>
 <p>Symbols are primarily used as hash keys, or to reference method names. Once a symbol is created, it can not be changed, and only one copy of a symbol can exist at any given time. There can not be multiple symbols with the same value. Symbols look like this: <code>:symbol</code>. They have a colon, and then are followed by a name.</p>
 <p><br></p>
-<h4 id="prints-puts-return--yield">Prints, Puts, Return, &amp; Yield</h4>
+<h3 id="prints-puts-return--yield">Prints, Puts, Return, &amp; Yield</h3>
 <p><br></p>
-<p><strong>Prints:</strong></p>
+<h4 id="prints">Prints:</h4>
 <p>The print command takes whatever instructions you give it, and puts it on the screen, on the same line.</p>
 <pre><code class="lang-ruby">print <span class="hljs-string">"Hello world!"</span>
 print <span class="hljs-string">"Hello world!"</span>
@@ -390,7 +390,7 @@ print <span class="hljs-string">"Hello world!"</span>
 <pre><code class="lang-ruby"><span class="hljs-string">"Hello world!Hello world!"</span>
 </code></pre>
 <p><br></p>
-<p><strong>Puts:</strong></p>
+<h4 id="puts">Puts:</h4>
 <p>The puts command creates a new line for each thing that you have it print.</p>
 <pre><code class="lang-ruby">puts <span class="hljs-string">"Hello world!"</span>
 puts <span class="hljs-string">"Hello world!"</span>
@@ -400,7 +400,7 @@ puts <span class="hljs-string">"Hello world!"</span>
 <span class="hljs-string">"Hello world!"</span>
 </code></pre>
 <p><br></p>
-<p><strong>Return:</strong></p>
+<h4 id="return">Return:</h4>
 <p>The return command just returns the value of something. If you don’t tell ruby what to return, it will always return the last expression in the method code block.</p>
 <pre><code class="lang-ruby"><span class="hljs-function"><span class="hljs-keyword">def</span> </span>double(n)
   <span class="hljs-keyword">return</span> n * <span class="hljs-number">2</span>
@@ -412,8 +412,8 @@ puts output
 <span class="hljs-comment"># puts ==&gt; 14</span>
 </code></pre>
 <p>In the example above, we defined a method called <code>double</code>. Inside the method, we <code>return n * 2</code>. We then set a variable <code>output</code> which is equal to <code>double(6)</code>. with the argument of <code>6</code>. We then add two to <code>output</code>, and we puts the variable <code>output</code>. If you don’t tell ruby what to return, it will always return the result of the last expression in the method code block.</p>
-<p><br></p>
-<p><strong>Yield:</strong></p>
+<p>br&gt;</p>
+<h4 id="yield">Yield:</h4>
 <p>The yield command allows for methods (that don’t have the capability already) to accept a block of code. Methods that accept blocks have a way of transferring control from the method to the block and back to the method again. You can build this into methods by using the yield command.</p>
 <pre><code class="lang-ruby"><span class="hljs-function"><span class="hljs-keyword">def</span> </span>block_test
     puts <span class="hljs-string">"We're in the method!"</span>
@@ -461,7 +461,7 @@ In the block, <code>n</code> is now equal to <code>&quot;Kim&quot;</code> and we
         </div>
 
         
-        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Basic Syntax"><i class="fa fa-angle-left"></i></a>
+        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="../ruby_loops/README.html" class="navigation navigation-next " aria-label="Next page: Ruby Loops"><i class="fa fa-angle-right"></i></a>

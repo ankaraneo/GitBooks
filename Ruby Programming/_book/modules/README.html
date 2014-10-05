@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Modules | </title>
+        <title>Modules | Ruby Programming</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -31,7 +31,7 @@
 
 
         
-    <div class="book"  data-level="8" data-basepath=".." data-revision="1412489211184">
+    <div class="book"  data-level="8" data-basepath=".." data-revision="1412526961149">
     
 
 <div class="book-summary">
@@ -55,7 +55,7 @@
                     <a href="../index.html">
                         <i class="fa fa-check"></i>
                         
-                         Basic Syntax
+                         Introduction
                     </a>
                 
             
@@ -347,7 +347,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" ></a>
+        <a href="../" >Ruby Programming</a>
     </h1>
 </div>
 
@@ -355,65 +355,80 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_7897">
+                    <section class="normal" id="section-gitbook_1205">
                     
-                        <p>Modules</p>
-<p>General Syntax:     A module is like a toolbox that contains a set of methods and constants. Modules are very much like classes, except they can’t create instances and can’t have subclasses. They’re just a way to store things that you might use later.  It doesn’t make much sense to store variables in a module, for by definition, variables change or vary. Constants however, should always stay the same, so including helpful constants inside a module is a good idea. Ruby constants are written in ALL_CAPS. So whenever you are creating a constant, it should be formatted accordingly.</p>
-<p>Creating a Module:     Creating a module is almost identical to creating a class. Like class names, module names are written in CapitilizedCamelCase as well.</p>
-<pre><code> It looks like this:
+                        <h1 id="modules">Modules</h1>
+<p><br></p>
+<h3 id="general-syntax">General Syntax:</h3>
+<p>A module is like a toolbox that contains a set of methods and constants. Modules are very much like classes, except they can’t create instances and can’t have subclasses. They’re just a way to store things that you might use later.  It doesn’t make much sense to store variables in a module, for by definition, variables change or vary. Constants however, should always stay the same, so including helpful constants inside a module is a good idea. Ruby constants are written in ALL_CAPS. So whenever you are creating a constant, it should be formatted accordingly.</p>
+<p><br></p>
+<h3 id="creating-a-module">Creating a Module:</h3>
+<p>Creating a module is almost identical to creating a class. Like class names, module names are written in CapitilizedCamelCase as well.</p>
+<p>It looks like this:</p>
+<pre><code class="lang-ruby"><span class="hljs-class"><span class="hljs-keyword">module</span> <span class="hljs-title">ModuleName</span></span>
+    <span class="hljs-comment"># Insert methods and constants to use later</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p><br>
+<br></p>
+<h3 id="name-spacing--scope-operators">Name-spacing &amp; Scope Operators:</h3>
+<p>One of the main purposes of a module is to separate methods and constants into named spaces. This is called (conveniently), namespacing, and it’s how Ruby doesn’t confuse <code>Math::PI</code> and <code>Circle::PI</code>. The double colon in the previous example is called a scope resolution operator. It is just a way to tell ruby where you are looking for a specific piece of code. If you say <code>Math::PI</code>, then it tells Ruby to look inside the <code>Math</code> module and search for <code>PI</code>, and not any other <code>PI</code> such as in the module <code>Circle</code>.</p>
+<p><br></p>
+<h3 id="importing-external-modules">Importing External Modules:</h3>
+<p>Some modules, like <code>MATH</code>, are already present in the interpreter. However, sometimes you will need to be explicitly imported. We can do this using the require keyword. Like so: <code>require ‘module’</code>. We can do more than just require a module, we can also <code>include</code> it. Any class that <code>include</code>’s a certain module can use that module’s methods and constants. You use include like so: <code>include Math</code>. Notice how it doesn’t use the quotes to call on the module. Also, whenever you include a module inside a class, that class no longer has to use the scope resolution operator (<code>::</code>) to define the module to look inside. Instead of writing <code>Math::PI</code>, you can just write <code>PI</code>.</p>
+<p><br></p>
+<h3 id="modules--classes">Modules &amp; Classes:</h3>
+<p>Whenever a module is used to mix in additional information and behavior into a class, it is called a mixin. Mixins allow us to customize a class without having to write additional code.</p>
+<p>Example:</p>
+<pre><code class="lang-ruby"><span class="hljs-class"><span class="hljs-keyword">module</span> <span class="hljs-title">Action</span></span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> </span>jump
+        <span class="hljs-variable">@distance</span> = rand(<span class="hljs-number">4</span>) + <span class="hljs-number">2</span>
+        puts <span class="hljs-string">"I jumped forward <span class="hljs-subst">#{<span class="hljs-variable">@distance</span>}</span> feet!"</span>
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
 
- module ModuleName
-      # Insert methods and constants to use later
- end
-</code></pre><p>Name-spacing &amp; Scope Operators:     One of the main purposes of a module is to separate methods and constants into named spaces. This is called (conveniently), namespacing, and it’s how Ruby doesn’t confuse Math::PI and Circle::PI. The double colon in the previous example is called a scope resolution operator. It is just a way to tell ruby where you are looking for a specific piece of code. If you say Math::PI, then it tells Ruby to look inside the Math module and search for PI, and not any other PI such as in the module  Circle.</p>
-<p>Importing External Modules:     Some modules, like MATH, are already present in the interpreter. However, sometimes you will need to be explicitly imported. We can do this using the require keyword. Like so: require ‘module’. We can do more than just require a module, we can also include it. Any class that include’s a certain module can use that module’s methods and constants. You use include like so: include Math. Notice how it doesn’t use the quotes to call on the module. Also, whenever you include a module inside a class, that class no longer has to use the scope resolution operator ( :: ) to define the module to look inside. Instead of writing Math::PI, you can just write PI.</p>
-<p>Modules &amp; Classes:     Whenever a module is used to mix in additional information and behavior into a class, it is called a mixin. Mixins allow us to customize a class without having to write additional code.</p>
-<pre><code> Example:
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rabbit</span></span>
+    <span class="hljs-keyword">include</span> <span class="hljs-constant">Action</span>
+    <span class="hljs-keyword">attr_reader</span> <span class="hljs-symbol">:name</span>
 
- module Action
-      def jump
-           @distance = rand(4) + 2
-           puts &quot;I jumped forward #{@distance} feet!&quot;
-      end
- end
+    <span class="hljs-function"><span class="hljs-keyword">def</span> </span>initialize(name)
+        <span class="hljs-variable">@name</span> = name
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
 
- class Rabbit
-      include Action
-      attr_reader :name
-      def initialize(name)
-           @name = name
-      end
- end
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cricket</span></span>
+    <span class="hljs-keyword">include</span> <span class="hljs-constant">Action</span>
+    <span class="hljs-keyword">attr_reader</span> <span class="hljs-symbol">:name</span>
 
- class Cricket
-      include Action
-      attr_reader :name
-      def initialize(name)
-           @name = name
-      end
- end
+    <span class="hljs-function"><span class="hljs-keyword">def</span> </span>initialize(name)
+        <span class="hljs-variable">@name</span> = name
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
 
- peter = Rabbit.new(&quot;Peter&quot;)
- jiminy = Cricket.new(&quot;Jiminy&quot;)
+peter = <span class="hljs-constant">Rabbit</span>.new(<span class="hljs-string">"Peter"</span>)
+jiminy = <span class="hljs-constant">Cricket</span>.new(<span class="hljs-string">"Jiminy"</span>)
 
- peter.jump
- jiminy.jump
-</code></pre><p>Notice how we define the jump method inside the Action module, the we include it into the Rabbit and Cricket class.</p>
-<p>Extending Include:     The INCLUDE keyword only mixes that modules methods and information in at the instance level, to where only instances of that particular class can use the information. However, the EXTEND keyword mixes the modules methods into the class level. This means the class itself can use that module’s information, as opposed to just instances of that class.</p>
-<pre><code> For example:
+peter.jump
+jiminy.jump
+</code></pre>
+<p>Notice how we define the <code>jump</code> method inside the <code>Action</code> module, the we <code>include</code> it into the <code>Rabbit</code> and <code>Cricket</code> class.</p>
+<p><br></p>
+<h3 id="extending-include">Extending Include:</h3>
+<p>The <code>include</code> keyword only mixes that modules methods and information in at the instance level, to where only instances of that particular class can use the information. However, the <code>extend</code> keyword mixes the modules methods into the class level. This means the class itself can use that module’s information, as opposed to just instances of that class.</p>
+<p>For example:</p>
+<pre><code class="lang-ruby"><span class="hljs-class"><span class="hljs-keyword">module</span> <span class="hljs-title">ThePresent</span></span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> </span>now
+        puts <span class="hljs-string">"It's <span class="hljs-subst">#{<span class="hljs-constant">Time</span>.new.hour &gt; <span class="hljs-number">12</span> ? <span class="hljs-constant">Time</span>.new.hour - <span class="hljs-number">12</span> <span class="hljs-symbol">:</span> <span class="hljs-constant">Time</span>.new.hour}</span>:<span class="hljs-subst">#{<span class="hljs-constant">Time</span>.new.min}</span> <span class="hljs-subst">#{<span class="hljs-constant">Time</span>.new.hour &gt; <span class="hljs-number">12</span> ? <span class="hljs-string">'PM'</span> <span class="hljs-symbol">:</span> <span class="hljs-string">'AM'</span>}</span> (GMT)."</span>
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
 
- module ThePresent
-      def now
-           puts &quot;It&#39;s #{Time.new.hour &gt; 12 ? Time.new.hour - 12 : Time.new.hour}:#{Time.new.min} #{Time.new.hour &gt; 12 ? &#39;PM&#39; : &#39;AM&#39;} (GMT).&quot;
-      end
- end
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TheHereAnd</span></span>
+    extend <span class="hljs-constant">ThePresent</span>
+<span class="hljs-keyword">end</span>
 
- class TheHereAnd
-      extend ThePresent
- end
-
- TheHereAnd.now
-</code></pre><p>Notice how we extended the now method from ThePresent module into TheHereAnd class. This now allows the class to use the ThePresent module. Unlike before, where only instances of TheHereAnd class would have been able to use it.</p>
+<span class="hljs-constant">TheHereAnd</span>.now
+</code></pre>
+<p>Notice how we <code>extend</code>ed the <code>now</code> method from <code>ThePresent</code> module into <code>TheHereAnd</code> class. This now allows the class to use the <code>ThePresent</code> module. Unlike before, where only instances of <code>TheHereAnd</code> class would have been able to use it.</p>
 
                     
                     </section>

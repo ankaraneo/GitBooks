@@ -23,7 +23,7 @@ You can access items inside an array like so: `example_array[0]`. Arrays start c
 
 **Adding to An Array:**
 
-Adding to an array can be done in two ways: The first looks like this: `example_array.push("string") —or— example_array << "string"`.
+Adding to an array can be done in two ways: The first looks like this: `example_array.push("string")` or `example_array << "string"`.
 
 <br>
 

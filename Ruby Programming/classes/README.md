@@ -1,8 +1,10 @@
-//TODO — Fix markup. Have all inline code blocks blue, and have all blocked code blocks have white background, and easy coloring. Dark background and multiple colors is information OVERLOAD.
+#Classes
 
-Classes
+<br>
 
-General Syntax:     Ruby is an object-oriented-programming language (OOP), which means it manipulates programming constructs called objects. All objects have methods and attributes. For example: `Matz.length #==> 4`. In this case, the `“Matz”` object is a string, with a method of `.length`, and an attribute of `4`. What makes `Matz` a string though? The fact that it is an instance of the class `String`. A class is just a way of organizing and producing objects with similar methods and attributes.
+### General Syntax:
+
+Ruby is an object-oriented-programming language (OOP), which means it manipulates programming constructs called objects. All objects have methods and attributes. For example: `Matz.length #==> 4`. In this case, the `“Matz”` object is a string, with a method of `.length`, and an attribute of `4`. What makes `Matz` a string though? The fact that it is an instance of the class `String`. A class is just a way of organizing and producing objects with similar methods and attributes.
 
 Class syntax looks like this:
 
@@ -12,11 +14,18 @@ class ClassName
 end
 ```
 
+<br>
+<br>
 
-Class Names:     Class names start with an uppercase letter and use camelCase instead of snake_case. In this example, we tell ruby that we can’t to create a new class, then we put the `ClassName` to give the class a name, and then we insert whatever code inside that class. `ClassName` is now a class, just like `“Hello!”`, is a `String` (which is a class) and `4` is a `Fixnum` (which is also a class).
+### Class Names:
 
+Class names start with an uppercase letter and use camelCase instead of snake_case. In this example, we tell ruby that we can’t to create a new class, then we put the `ClassName` to give the class a name, and then we insert whatever code inside that class. `ClassName` is now a class, just like `“Hello!”`, is a `String` (which is a class) and `4` is a `Fixnum` (which is also a class).
 
-Initialize Method & Creating a Class:     When creating a class, you want to create a method called `initialize`. When you create a new instance, it will run the `initialize` method, and execute any code in that method. `initialize`. takes however many arguments you tell it to take. In ruby, we use the `@` operator before a variable to signify that it is an instance variable. This means that the variable is attached to the instance of the class. They are unique to whatever instance is
+<br>
+
+### Initialize Method & Creating a Class:
+
+When creating a class, you want to create a method called `initialize`. When you create a new instance, it will run the `initialize` method, and execute any code in that method. `initialize`. takes however many arguments you tell it to take. In ruby, we use the `@` operator before a variable to signify that it is an instance variable. This means that the variable is attached to the instance of the class. They are unique to whatever instance is
 
 For example:
 
@@ -34,15 +43,23 @@ time_machine = Car.new(DMC-12, DeLorean)
 
 In this example, we created an instance `time_machine` of the class `Car. time_machine` has its own make of `DeLorean` and its own model of `DMC-12`. So these variables only belong to this instance, thus, this makes these variables instance variables.
 
+<br>
 
-Creating a New Instance of a Class:     Creating a new instance of a class looks like this:
-`me = Person.new(“Eric”)`. Where `me` is a new instance of the class Person, and it takes an argument of `“Eric”`.
+### Creating a New Instance of a Class:
 
+Creating a new instance of a class looks like this: `me = Person.new(“Eric”)`. Where `me` is a new instance of the class Person, and it takes an argument of `“Eric”`.
 
-Different Kinds of Variables:     Another important aspect of Ruby classes is scope. The scope of a variable is the context in which it’s visible to the program. Not all variables are accessible to all parts of the program. When dealing with classes, you can have variables that accessible to all parts of the program (global variables), variables that are only available to certain methods (local variables), and variables that are only available to a particular instance of a class (instance variables). The same goes for methods, some are available everywhere, some can only be accessible to members of that class, and some are only accessible to a particular instance.
+<br>
 
+### Different Kinds of Variables:
 
-Naming Your Variables:     Instance variables start with the `@`operator. Class variables are like instance variables, but instead of belonging to an instance of a class, they belong to the class itself. Class variables always start with the `@@` operator. Global variables can be declared in two ways: The first is just to define the variable outside of any classes or methods, then it is global. If you want to make a variable global from inside a method or class, you start it with the `$`operator.
+Another important aspect of Ruby classes is scope. The scope of a variable is the context in which it’s visible to the program. Not all variables are accessible to all parts of the program. When dealing with classes, you can have variables that accessible to all parts of the program (global variables), variables that are only available to certain methods (local variables), and variables that are only available to a particular instance of a class (instance variables). The same goes for methods, some are available everywhere, some can only be accessible to members of that class, and some are only accessible to a particular instance.
+
+<br>
+
+### Naming Your Variables:
+
+Instance variables start with the `@`operator. Class variables are like instance variables, but instead of belonging to an instance of a class, they belong to the class itself. Class variables always start with the `@@` operator. Global variables can be declared in two ways: The first is just to define the variable outside of any classes or methods, then it is global. If you want to make a variable global from inside a method or class, you start it with the `$`operator.
 
 An example of a class with different kinds of variables:
 
@@ -71,8 +88,11 @@ puts Person.number_of_instances
 
 In this example, we create a class variable called `@@people_count` and set it to 0. Then we add it to the `initialize` method, and every time an instance is initialized, it adds one to `people_count`. We define a new method called `number_of_instances` and have it return the current `@@people_count`. We then print the `number_of_instances` method to the console to see how many instances have been created of the `People` class.
 
+<br>
 
-Class Methods:     Just like how there are class variables, and instance variables, the same is true for methods. A class method belongs to the class as a whole, while an instance method belongs to certain instances.
+### Class Methods:
+
+Just like how there are class variables, and instance variables, the same is true for methods. A class method belongs to the class as a whole, while an instance method belongs to certain instances.
 
 Here is the comparison between the two:
 
@@ -114,8 +134,12 @@ eric.greeting
 # This would work, because Eric is an actual instance of the class Person
 ```
 
+<br>
+<br>
 
-Real-World Classes:     However, in the real world, most classes will not look like the examples above. They will more closely resemble real-world objects.
+### Real-World Classes:
+
+However, in the real world, most classes will not look like the examples above. They will more closely resemble real-world objects.
 
 Here is an example of a class that would most likely be seen in commercial software:
 
@@ -132,8 +156,11 @@ end
 
 Notice how it creates an instance of the  `RecordInvalid` class. The syntax should all be familiar, except the `raise` bit. All it does is generate a new `RecordInvalid` error if the user tries to create or save an invalid record.
 
+<br>
 
-Inheritance:     Inheritance is the process by which one class takes on the methods and attributes of another, and it’s used to express an is-a relationship. For example, a human is-a mammal, so it could inherit it’s methods and attributes from the mammal class, but a human is not a fox, so it could not inherit its methods and attributes from the fox, despite them both being mammals. The class inheriting from another class is called the `sub-class or the  `derived-class`. The class it is inheriting from is called the `super-class`, the  `parent`, or the `base class`.
+### Inheritance:
+
+Inheritance is the process by which one class takes on the methods and attributes of another, and it’s used to express an is-a relationship. For example, a human is-a mammal, so it could inherit it’s methods and attributes from the mammal class, but a human is not a fox, so it could not inherit its methods and attributes from the fox, despite them both being mammals. The class inheriting from another class is called the `sub-class or the  `derived-class`. The class it is inheriting from is called the `super-class`, the  `parent`, or the `base class`.
 
 Inheritance syntax works like so:
 
@@ -145,11 +172,17 @@ end
 
 Where `InheritingClass` is the new class that is being made, and the `BaseClass` is the class from which it is inheriting its methods and attributes from. You can read `<` as “inheriting from”.
 
+<br>
 
-Overriding Inheritance:     Sometimes you will want one class that inherits from another to not only take on the parent’s methods and attributes, but to also override one or more of them. For example: You might have an `Email` class that inherits from the `Message` class. Both classes will have a `send` method, but sending an email might require different protocols that `Message` doesn’t have. Instead of just creating a new method in your `Email` class specifically for that, you can just create a method named `send` and it will override the `send` method that it inherited from  `Message`.  Also, sometimes you will be working inside a `sub-class` and realize you have overwritten a method or attribute from its `super-class` that you actually need. No problem! You can directly access a `super-class`’s methods or attributes by using Ruby’s built in `super` keyword. When you call the `super` keyword form inside a `sub-class` method or attribute, it will tell Ruby to look in the `super-class` and find a method or attribute with the same name as the one from which `super` is called. Ruby will then use the `super-class` method/attribute instead.
+### Overriding Inheritance:
 
+Sometimes you will want one class that inherits from another to not only take on the parent’s methods and attributes, but to also override one or more of them. For example: You might have an `Email` class that inherits from the `Message` class. Both classes will have a `send` method, but sending an email might require different protocols that `Message` doesn’t have. Instead of just creating a new method in your `Email` class specifically for that, you can just create a method named `send` and it will override the `send` method that it inherited from  `Message`.  Also, sometimes you will be working inside a `sub-class` and realize you have overwritten a method or attribute from its `super-class` that you actually need. No problem! You can directly access a `super-class`’s methods or attributes by using Ruby’s built in `super` keyword. When you call the `super` keyword form inside a `sub-class` method or attribute, it will tell Ruby to look in the `super-class` and find a method or attribute with the same name as the one from which `super` is called. Ruby will then use the `super-class` method/attribute instead.
 
-Multiple Inheritances:     Any given Ruby class can only have one parent class. Some languages allow a class to have more than one parent, which is called a multiple inheritance. This can get really ugly really fast, which is why Ruby doesn’t allow it. However, there are circumstances where you want to incorporate data or behavior from several classes into one sub-class. Ruby allows this through the use of mix-ins.
+<br>
+
+### Multiple Inheritances:
+
+Any given Ruby class can only have one parent class. Some languages allow a class to have more than one parent, which is called a multiple inheritance. This can get really ugly really fast, which is why Ruby doesn’t allow it. However, there are circumstances where you want to incorporate data or behavior from several classes into one sub-class. Ruby allows this through the use of mix-ins.
 
 For example:
 
@@ -176,8 +209,11 @@ class Dragon < Human; end
 
 We tried to have `Dragon` inherit from both `Human` and `Creature`, but Ruby gave us an error that basically says “`Dragon` seems to be inheriting from more than one class, please fix this so that `Dragon` only has one `super-class`.”
 
+<br>
 
-Public and Private Methods:     Ruby allows you to explicitly make some methods `public`, and some methods  `private`. `public` methods allow for an interface with the rest of the program. They say: “Hey! Ask me if you need to know something about my class or its instances!”. `private` methods on the other hand are for your classes to do their own work undisturbed. They don’t want anyone asking them anything, so they make themselves unreachable. Methods in Ruby are public by default. If you want to make it clear whether your method is public or private, then you have to put either `public` or `private` before your method definition.
+### Public and Private Methods:
+
+Ruby allows you to explicitly make some methods `public`, and some methods  `private`. `public` methods allow for an interface with the rest of the program. They say: “Hey! Ask me if you need to know something about my class or its instances!”. `private` methods on the other hand are for your classes to do their own work undisturbed. They don’t want anyone asking them anything, so they make themselves unreachable. Methods in Ruby are public by default. If you want to make it clear whether your method is public or private, then you have to put either `public` or `private` before your method definition.
 
 Like so:
 
@@ -199,8 +235,10 @@ end
 
 Note that everything after the `public` keyword until the `end` of the class definition will then be public, unless we state otherwise. Private methods are private to the object that they are defined in. This means you can only call the method from inside other methods within that object. Another way to say it is that the method cannot be called using an explicit receiver. Receivers are the objects that methods are called on. For example: `object.method`, where `object` is the receiver of the `method`. In order to access private information, we have to create public methods that know how to get it. This separates the private implementation from the public interface.
 
+<br>
+<br>
 
-Example of Putting it All Together:
+### Example of Putting it All Together:
 
 ```ruby
 class Account
