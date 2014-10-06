@@ -1,2 +1,0 @@
-# Table Variabes & Set Operators
-
