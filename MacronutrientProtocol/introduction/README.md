@@ -1,0 +1,7 @@
+# Macronutrients
+
+<br>
+
+Everyday, whenever you eat something, you are consuming macronutrients. Macronutrients are nothing more than just fats, carbohydrates, and protein. Just about EVERY food you eat will contain all three of them, hence **macro**nutrients. Macronutrients, or macros for short, are what make up your caloric intake. One gram of fat is nine calories, while one gram of protein and carbohydrates are four calories each. Your calories are broken down into this subgroup of macros. For example, say ate a granola bar that is worth 200 calories. These calories are there because the bar contains fat, carbohydrates, and protein. So this granola bar could have a macronutrient profile of 8g of fat, 25g of carbohydrates, and 7g of protein. 8g of fat equates to 72 calories (8g x 9calories = 72 calories). While 7g of protein is 28 calories (7 x 4 = 28), and 25g of carbohydrates is 100 calories (25 x 4 = 100). Thus a 200 calories granola bar if we add up all the totals (72 + 28 + 100 = 200).
+
+Then on the other hand, we have our micronutrients. As you might have guessed, micronutrients are your vitamins and minerals. Minerals being calcium, sodium, potassium, and others. Vitamins being vitamin A, vitamin C, vitamin D, and much more. Both your minerals and vitamins are **very** important to our bodies. They each help with different bodily systems, and the more we have of these (too much is bad however), the more efficiently and less strenuous they will operate. 
