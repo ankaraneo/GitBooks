@@ -8,4 +8,5 @@
 * [What is Flexible Dieting?](what_is_flexible_dieting/README.md)
 * [How to Set up Your Macros](how_to_set_up_your_macros/README.md)
 * [How to Count your Macros](how_to_count_your_macros/README.md)
+* [How to Read Nutrion Labels](how_to_read_nutrion_labels/README)
 
