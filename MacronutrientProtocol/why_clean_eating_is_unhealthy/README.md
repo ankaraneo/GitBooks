@@ -2,6 +2,8 @@
 
 <br>
 
+### What does it mean to be healthy? - Physical & mental health //TODO
+
 The leading myth in today's fitness industry.... The notion that you must eat 'clean' foods to get your desired results. It's EVERYWHERE, and the sad part is majority of people think it's the only way to produce results. Not only is it not the only way, it's severely unhealthy. How many times have you tried to diet, maybe stuck with it for a period of time, then inevitably you either binged or fell back into your previous eating habits? If not you, then how many times have you heard someone say they "ate like crap this past weekend." Majority of people associate falling off a diet, or "cheating", as just a lack of will. Not only is this a ridiculous judgement, this cyclical dieting is DANGEROUS. Many people view "cheating" as just a slip-up and brush it under the rug. What they don't realize is the very serious side effects that this has on their bodies. Some people combat over eating with excessive calorie restriction and increased exercise. This is now recognized as an eating disorder by the National Eating Disorder Association, by the name of Orthorexia Nervosa. It is litterally defined as having a "fixation on righteous eating." Dr. Karin Katrina wrote a brief article that can be found on at the [Orthorexia Nervosa](https://www.nationaleatingdisorders.org/orthorexia-nervosa) page, on nationaleatingdisorder.org.
 
 Here is an exerpt from that article:

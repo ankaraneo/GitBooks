@@ -12,7 +12,7 @@ I'm sure you're aware of the infamous 'cheat meal', which some one uses to "rewa
 
 Dietary fat is very easily stored within fat cells (around 90% efficiency) regardless of whether you are dieting or in a caloric surplus. When one consumes a cheat meal (usually high in fat) with total disregard for macronutrient composition, this can very easily lead to fat gain. Not directly because it is high in fat, but it will usually contain a substantial amount of calories which will put someone way over their maintence caloric intake, and lead to a significant amount of fat gain.
 
-A STRUCTURED refeed is an increase in calories primarily from carboydrates that will allow a dieter to fix any cravings they may have, all while increasing training performace, and not hindering one's fat loss goals. 
+A STRUCTURED refeed is an increase in calories primarily from carboydrates that will allow a dieter to fix any cravings they may have, all while increasing training performace, and not hindering one's fat loss goals.
 <br>
 
-#How to implement refeeds
+# How to implement refeeds
